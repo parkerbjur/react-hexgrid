@@ -29,11 +29,11 @@ class App extends Component {
             </Hexagon>
             <Hexagon q={-1} r={0} s={1} />
             <Hexagon q={-2} r={0} s={1} />
-            <Path start={new Hex(0, 0, 0)} end={new Hex(-2, 0, 1)} />
+            <Path start={{ q: 0, r: 0, s: 0 }} end={{ q: -2, r: 0, s: 1 }} />
           </Layout>
           {/* Additional small grid, hexagons generated with generator */}
           <Layout size={{ x: 2, y: 2 }} origin={{ x: 50, y: -30 }}>
-            { moreHexas.map((hex, i) => <Hexagon key={i} q={hex.q} r={hex.r} s={hex.s} />) }
+            {moreHexas.map((hex, i) => <Hexagon key={i} q={hex.q} r={hex.r} s={hex.s} />)}
           </Layout>
           {/* You can define multiple patterns and switch between them with "fill" prop on Hexagon */}
           <Pattern id="pat-1" link="http://lorempixel.com/400/400/cats/1/" size={hexagonSize} />

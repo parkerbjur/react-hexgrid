@@ -74,7 +74,7 @@ class App extends Component {
             </Hexagon>
             <Hexagon q={-1} r={0} s={1} />
             <Hexagon q={-2} r={0} s={1} />
-            <Path start={new Hex(0, 0, 0)} end={new Hex(-2, 0, 1)} />
+            <Path start={{ q: 0, r: 0, s: 0 }} end={{ q: -2, r: 0, s: 1 }} />
           </Layout>
           <Pattern id="pat-1" link="http://cat-picture" />
           <Pattern id="pat-2" link="http://cat-picture2" />
